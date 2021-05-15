@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Ashish.jpeg" type="image/x-icon">
+
+    <title>Animated Vetical Rotation Text CSS</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .banner-area {
+            background-image: url('./072de800f385ec7b6ae0df7b6d686ff4.gif');
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .banner-area::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgb(41 37 62 / 70%);
+        }
+
+        .wrapper h2 {
+            margin: 0;
+            text-align: center;
+            padding-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            height: 160px;
+            overflow: hidden;
+            font-size: 35px;
+            line-height: 40px;
+            color: #262626;
+        }
+
+        .banner-text {
+            font-weight: 600;
+            overflow: hidden;
+            height: 40px;
+            padding: 0 40px;
+        }
+
+        .text-content {
+            margin-top: 0;
+            padding-left: 0;
+            text-align: center;
+            list-style: none;
+            animation: animate 10s infinite;
+        }
+
+        .content {
+            line-height: 40px;
+            margin: 0;
+            color: darkorange;
+        }
+
+        .wrapper h2 {
+            font-weight: bold;
+            color: white;
+        }
+
+        @keyframes animate {
+
+            0%,
+            12.66%,
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            16.66%,
+            29.32% {
+                transform: translate3d(0, -25%, 0);
+            }
+
+            33.32%,
+            45.98% {
+                transform: translate3d(0, -50%, 0);
+            }
+
+            49.98%,
+            62.64% {
+                transform: translate3d(0, -75%, 0);
+            }
+
+            66.64%,
+            79.3% {
+                transform: translate3d(0, -50%, 0);
+            }
+
+            83.3%,
+            95.96% {
+                transform: translate3d(0, -25%, 0);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .small {
+                font-size: 14px;
+            }
+
+            .content {
+                line-height: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-area">
+        <div class="wrapper">
+            <h2>Ashish Yadav </h2>
+            <div class="banner-text">
+                <ul class="text-content">
+                    <li class="content">Web Designer</li>
+                    <li class="content">Philanthropist</li>
+                    <li class="content small">UI/UX Designer</li>
+                    <li class="content small">Web Developer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
